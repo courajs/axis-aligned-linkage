@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smooth Directional Linking</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Nice curves in graphs & trees
+      </h1>
+    </header>
+
+    <main>
+      <div id="swatches">
+        <div id="one">
+        </div>
+        <div id="two">
+        </div>
+        <div id="three">
+        </div>
+        <div id="four">
+        </div>
+        <div id="five">
+        </div>
+        <div id="six">
+        </div>
+      </div>
+      <div id="controls">
+        <div class="control angle">
+          <input type="range" min="-90" max="90" value="0">
+          <input type="number" min="-90" max="90" value="0">
+        </div>
+      </div>
+      <div>
+        <svg id="canvas" width="800px" height="600px">
+          <circle class="endpoint" r="20"></circle>
+          <circle class="endpoint" r="20"></circle>
+          <line class="control-handle"></line>
+          <line class="control-handle"></line>
+          <g class="control-point">
+            <circle class="outer" r="15"></circle>
+            <circle class="inner" r="5"></circle>
+          </g>
+          <g class="control-point">
+            <circle class="outer" r="15"></circle>
+            <circle class="inner" r="5"></circle>
+          </g>
+          <line class="symmetry-axis"></line>
+          <line class="direct-connection"></line>
+          <path class="link"></path>
+        </svg>
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+      </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
